@@ -1,5 +1,9 @@
 # Breve introducción teórica de conceptos
 
-[Modelos de Difusión](diffusion.md#modelos-de-difusión)
+### [Modelos de Difusión](diffusion.md)
 
-[CLIP](clip.md#clip)
+### [CLIP](clip.md)
+
+### [AudioLDM](papers/audioldm.pdf)
+
+### [BrainMagick](papers/brainmagick.pdf)

@@ -1,6 +1,6 @@
-# Breve introducción teórica de conceptos
+# Breve introducción teórica de conceptos
 
-## Modelos de difusión
+## Modelos de difusión
 
 Tenemos un conjunto de datos reales (imágenes, audios...) con una distribución de probabilidad desconocida. Nuestro objetivo es crear nuevas muestras que se asemejen a las existentes en nuestro conjunto de datos. Para ello, aprendemos un proceso de difusión que genera una distribución de probabilidad de una forma conocida (por ejemplo una gaussiana). Una vez tenemos esa distribución, podemos muestrear de ella muestras de ruido, y mediante el proceso de denoising aprendido, generamos nuevas muestras que se asemejan a las de nuestro conjunto de datos inicial (imágenes, audios...). 
 
@@ -14,7 +14,7 @@ Visto de forma simple, funciona en 3 pasos fundamentales:
 
 Ahora, esto no es útil por si solo, ya que normalmente queremos generar muestras más específicas. Por ejemplo, dado un conjunto de imágenes de todo tipo, incluyendo animales, podríamos querer generar nuevas imágenes de un ratón eléctrico amarillo con un sombrero de fiesta en estilo de caricatura japonesa.
 
-### Modelos de difusión condicional
+### Modelos de difusión condicional
 
 En un modelo de difusión estándar, las muestras se generan sin ninguna especificación sobre cómo deberían ser más allá de parecerse a las que están en el conjunto de datos. En cambio, en un modelo de difusión condicional, el proceso de generación se condiciona a información adicional. Esto permite guiar el modelo para que produzca resultados que no solo son realistas, sino también alineados con requisitos o preferencias específicas.
 
@@ -27,8 +27,6 @@ La condición puede ser implementada de varias formas:
 2. **Modificación del Proceso de Difusión**: Otra opción es modificar las etapas del proceso de difusión en sí para que dependan de la condición. Esto puede implicar ajustar cómo se añade el ruido o cómo se realiza el proceso de denoising basándose en la información de la condición.
     
 3. **Uso de la Condición en Cada Paso del Denoising**: Durante el proceso inverso de denoising, la condición puede ser aplicada repetidamente en cada paso, asegurando que la muestra generada se ajuste cada vez más a lo especificado por la condición.
-
-### Modelos de difusión latente
 
 ### Modelos de difusión latente
 

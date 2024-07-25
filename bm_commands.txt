@@ -1,0 +1,23 @@
+git clone https://github.com/inogii/brainmagick.git
+apt install unzip btop
+conda init
+
+chmod 600 ~/.kaggle/kaggle.json 
+mkdir ~/brainmagick/data
+mkdir ~/brainmagick/data/asdf
+mkdir ~/brainmagick/data/asdf/download
+kaggle datasets download -d inogii/brennan ~/brainmagick/data/brennan2019/download/
+unzip ~/brainmagick/data/brennan2019/download/brennan.zip
+rm ~/brainmagick/data/brennan2019/download/brennan.zip
+
+# dora run download_only=true 'dset.selections=[brennan2019]'
+
+dora run 'dset.selections=[brennan2019]'
+nvidia-smi -l
+btop
+
+### temux cheatsheet
+
+horizontal split: ctrl+b "
+vertical split: ctrl+b %
+switch screen: ctrl+b arrow

@@ -5,6 +5,9 @@
 El proyecto cuenta con varios forks de los repositorios de los proyectos base utilizados en el estudio.
 
 - [BrainMagick](https://github.com/inogii/brainmagick)
+
+- [Brennan2019](https://www.kaggle.com/datasets/inogii/brennan) (dataset para brainmagick)
+
 - [Dora - bugfixes](https://github.com/inogii/dora)
 - [Flashy - bugfixes](https://github.com/inogii/flashy)
 

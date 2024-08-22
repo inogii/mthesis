@@ -2,9 +2,12 @@
 
 ## Repositorios del proyecto
 
-El proyecto cuenta con varios forks de los repositorios de los proyectos base utilizados en el estudio.
+El proyecto cuenta con  un repositorio propio para la arquitectura final.
+- [eeg2speech](https://github.com/inogii/eeg2speech)
 
-- [BrainMagick](https://github.com/inogii/brainmagick)
+Además, cuenta con varios forks de los repositorios de los proyectos base utilizados en el estudio.
+
+- [brainmagick](https://github.com/inogii/brainmagick)
 
 - [Brennan2019](https://www.kaggle.com/datasets/inogii/brennan) (dataset para brainmagick)
 
@@ -33,12 +36,12 @@ En el caso de EEG2Speech, se propone sustituir la pareja de encoders de Audio y 
 ## Objetivos
 
 - [x] Entrenar y extraer el encoder de EEG de BrainMagick (brennan2019).
-- [ ] Extraer el encoder de audio de wav2vec 2.0.
-- [ ] Extraer el dataset procesado de BrainMagick (brennan2019).
-- [ ] Inferir embeddings de EEG y audio para el dataset de BrainMagick. 
-- [ ] Modificar la arquitectura de AudioLDM para incluir el encoder de EEG en lugar del encoder de texto.
-- [ ] Modificar la arquitectura de AudioLDM para incluir el encoder de wav2vec 2.0 en lugar del encoder de audio.
-- [ ] Reentrenar el modelo con el dataset brennan2019.
+- [x] Extraer el encoder de audio de wav2vec 2.0.
+- [x] Extraer el dataset procesado de BrainMagick (brennan2019).
+- [x] Inferir embeddings de EEG y audio para el dataset de BrainMagick. 
+- [x] Modificar la arquitectura de AudioLDM para incluir el encoder de EEG en lugar del encoder de texto.
+- [x] Modificar la arquitectura de AudioLDM para incluir el encoder de wav2vec 2.0 en lugar del encoder de audio.
+- [~] Reentrenar el modelo con el dataset brennan2019.
 
 ## Trabajo Previo
 
